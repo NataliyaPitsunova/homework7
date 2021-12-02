@@ -1,11 +1,4 @@
 public class Cat {
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     private String name;
     private int appetite;
@@ -15,6 +8,14 @@ public class Cat {
 
     public boolean isSatiety() {
         return satiety;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Cat(String name, int appetite, boolean satiety) {

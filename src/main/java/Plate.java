@@ -14,6 +14,7 @@ public class Plate {
         else {food-=n;
         return true;}
     }
+
     public void IncFood(int pourIn){
         if (food+pourIn>=foodMax){
             food=foodMax;
