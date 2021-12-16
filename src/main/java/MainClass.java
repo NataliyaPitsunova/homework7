@@ -16,12 +16,10 @@ public class MainClass {
         cats[4] = zigzag;
 
 
-
         while (!allsatiety(cats, plate))
-        plate.IncFood(100);
+            plate.IncFood(100);
 
     }
-
 
 
     public static boolean allsatiety(Cat[] cats, Plate plate) {
@@ -32,9 +30,10 @@ public class MainClass {
                 cats[i].eat(plate);
                 if (cats[i].isSatiety()) {
                     cats[i].infoCat();
-                }else {
+                } else {
                     cats[i].infoCat();
-                if (i==cats.length-1) return false;}
+                    if (i == cats.length - 1) return false;
+                }
             }
         }
         return true;

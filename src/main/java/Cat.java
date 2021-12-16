@@ -5,7 +5,6 @@ public class Cat {
     private boolean satiety;
 
 
-
     public boolean isSatiety() {
         return satiety;
     }
@@ -23,19 +22,22 @@ public class Cat {
         this.appetite = appetite;
         this.satiety = satiety;
     }
+
     public void eat(Plate p) {
-        if (satiety==false) {
-            if (p.decreaseFood(appetite)){
-            satiety=true;}
-            else {
-            satiety=false;}
+        if (satiety == false) {
+            if (p.decreaseFood(appetite)) {
+                satiety = true;
+            } else {
+                satiety = false;
+            }
         }
-     }
-public void infoCat(){
-        if (satiety){
-        System.out.println("Кот "+ name+ " поел " + satiety );}
-        else {
-            System.out.println("Кот "+ name+ " голодный " + satiety );
+    }
+
+    public void infoCat() {
+        if (satiety) {
+            System.out.println("Кот " + name + " поел " + satiety);
+        } else {
+            System.out.println("Кот " + name + " голодный " + satiety);
         }
     }
 }
