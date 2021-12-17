@@ -1,12 +1,11 @@
 public class MainClass {
-
-
     public static void main(String[] args) {
         Cat barsik = new Cat("Барсик", 7, false);
         Cat murzic = new Cat("Мурзик", 5, false);
         Cat musya = new Cat("Муся", 8, false);
         Cat dusya = new Cat("Дуся", 3, false);
         Cat zigzag = new Cat("Зигзаг", 6, false);
+
 
         Plate plate = new Plate(20, 100);
         Cat[] cats = new Cat[5];
@@ -17,12 +16,10 @@ public class MainClass {
         cats[4] = zigzag;
 
 
-
         while (!allsatiety(cats, plate))
-        plate.IncFood(100);
+            plate.IncFood(100);
 
     }
-
 
 
     public static boolean allsatiety(Cat[] cats, Plate plate) {
@@ -33,9 +30,10 @@ public class MainClass {
                 cats[i].eat(plate);
                 if (cats[i].isSatiety()) {
                     cats[i].infoCat();
-                }else {
+                } else {
                     cats[i].infoCat();
-                if (i==cats.length-1) return false;}
+                    if (i == cats.length - 1) return false;
+                }
             }
         }
         return true;
